@@ -1,98 +1,58 @@
+# 🔮 Doctor Strange's Multiverse Predictor
 
-# 🌀 Multiverse Victory Predictor
-
-Inspired by **Doctor Strange's 14,000,605 simulations** in *Avengers: Infinity War*, this machine learning project predicts whether a timeline results in **Victory** or **Defeat** based on various strategic parameters.
-
----
-
-## 🚀 Live Demo
-
-🔗 Run locally with Streamlit:
-```bash
-streamlit run streamlit_app.py
-```
+Out of 14,000,605 timelines, only a few lead to victory. This AI-powered multiverse simulator uses Machine Learning to help identify victorious outcomes in alternate realities—just like Doctor Strange.
 
 ---
 
-## 📁 Repository Structure
+## 🚀 About the Project
 
-```
-multiverse-victory-predictor/
-├── multiverse_data.csv              # Dataset (5000 simulated timelines)
-├── model_training.ipynb             # Jupyter Notebook for model training
-├── multiverse_logistic.pkl          # Trained Logistic Regression model
-├── multiverse_random_forest.pkl     # Trained Random Forest model
-├── streamlit_app.py                 # Streamlit UI (Dark Theme)
-├── requirements.txt                 # Python dependencies
-├── assets/
-│   └── pie_chart.png                # Victory vs Defeat Pie Chart
-└── README.md                        # This file
-```
+This project is a fun and interactive Streamlit-based web app that uses **Logistic Regression** and **Random Forest** models to predict whether a given timeline leads to **Victory** or **Defeat** based on various input parameters. Inspired by the Marvel Cinematic Universe, it puts you in charge of simulating multiversal outcomes using strategic features.
 
 ---
 
-## 🧠 Features Used
+## 🧠 Features
 
-The model uses 18+ simulation parameters such as:
-
-- `team_strength`
-- `enemy_strength`
-- `team_coordination`
-- `intel_accuracy`
-- `diversion_success_rate`
-- `enemy_stone_count`
-- `universe_variability`
-- Categorical: `has_time_stone`, `terrain_advantage`, `enemy_mind_state`, etc.
-
----
-
-## 🧪 ML Models Used
-
-| Model               | Purpose                     |
-|--------------------|-----------------------------|
-| Logistic Regression| Baseline for binary outcome |
-| Random Forest       | Robust performance model    |
-
-✅ Both models are trained using `Pipeline` (preprocessing + model), so they're ready for use without separate preprocessing.
+- 🔘 Model selection: Logistic Regression or Random Forest  
+- 🧩 Input real-world and fantasy parameters like:
+  - Team & enemy strength  
+  - Strategic complexity & intel accuracy  
+  - Presence of Time Stone, Ironman, sacrifice chances  
+  - Enemy mindset, number of heroes/enemies, and more  
+- 📊 Dynamic probability breakdown using Bar and Pie charts  
+- 🌑 Dark mode theme for immersive UI  
+- 💬 Quotes inspired by Dr. Strange himself!
 
 ---
 
-## 📸 UI Preview
+## 🛠️ Tech Stack
 
-![Pie Chart](assets/pie_chart.png)
+- **Python**
+- **Streamlit**
+- **scikit-learn**
+- **Pandas**
+- **Matplotlib**
+- **Joblib**
 
 ---
 
 ## 📦 Installation
 
-1. Clone this repo:
 ```bash
-git clone https://github.com/yourusername/multiverse-victory-predictor.git
-```
-
-2. Install dependencies:
-```bash
+git clone https://github.com/yourusername/multiverse-predictor.git
+cd multiverse-predictor
 pip install -r requirements.txt
-```
+streamlit run app.py
+🧪 Demo
+Try out different combinations of strategy, strength, and surprise to see how the outcome changes. Every input set creates a unique prediction—no two timelines are the same!
 
-3. Launch app:
-```bash
-streamlit run streamlit_app.py
-```
-
----
-
-## 📜 References
-
-- Marvel’s *Avengers: Infinity War* – Doctor Strange sees 14,000,605 timelines
-- Machine Learning: scikit-learn, pandas, matplotlib, streamlit
-
----
+📸 Screenshots
 
 
-## 📥 Downloads
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first.
 
-- 📘 [`model_training.ipynb`](sandbox:/mnt/data/model_training.ipynb)
-- 🌌 [`streamlit_app.py`](sandbox:/mnt/data/streamlit_app.py)
+🧙‍♂️ Inspiration
+"We’re in the endgame now." — Dr. Stephen Strange
 
-Enjoy exploring the multiverse!
+📄 License
+MIT License © 2025
